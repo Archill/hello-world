@@ -13,7 +13,7 @@ G_SISO =
 Beim Aufstellen der Übertragungsfunktion fällt auf, dass diese einen Pol bei 3.3e-13 hat, der eigentlich bei 0 sein müsste.
 Dies ist auf Maschinenungenauigkeit zurückzuführen, denn die Standartlösung von Matlab mit dem Befehl eig ist numerisch sehr ungünstig. 
 Besser wäre eine QR-Zerlegung?????. Daraus folgt dass für eine konstante Eingangsspannung das System für t->∞ gegen einen begrenzenten endlichen Wert x2 strebt, die stationäre Verstärkung
-also einen festen Wert(276.1/3.304e-14) hat. Dies wiederspricht jedoch der Physik, in der bei konstanter Spannung sich der Wagen immer weiter ins Unendliche bewegen würde. 
+also einen festen Wert (276.1/3.304e-14) hat. Dies wiederspricht jedoch der Physik, in der bei konstanter Spannung sich der Wagen immer weiter ins Unendliche bewegen würde. 
 Deshalb wenden wir in Matlab minreal auf die Übertragungsfunktion an, welches dann dem realen System entspricht. 
 
 G_SISO_min=minreal(G_SISO)
