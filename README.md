@@ -22,8 +22,10 @@ Dieses neue System ist nicht mehr physikalisch zu interpretieren, was es schwier
 
 G_SISO_min =
  
-                 276.1
-  -----------------------------------
-  s^4 + 13.5 s^3 + 303.5 s^2 + 2431 s
+G_SISO_min =
+
+               276.1
+-----------------------------------
+s^4 + 13.5 s^3 + 303.5 s^2 + 2431 s
 
 ##Identifizierung der Parameter c und d
